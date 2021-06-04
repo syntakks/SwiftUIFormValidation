@@ -11,6 +11,8 @@
 		E5490F77266AAF8100CD39B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5490F76266AAF8100CD39B8 /* ContentView.swift */; };
 		E5490F79266AAF8200CD39B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5490F78266AAF8200CD39B8 /* Assets.xcassets */; };
 		E5490F7C266AAF8200CD39B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5490F7B266AAF8200CD39B8 /* Preview Assets.xcassets */; };
+		E5490F87266AB10F00CD39B8 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5490F86266AB10F00CD39B8 /* ContentViewModel.swift */; };
+		E5490F8A266AB72B00CD39B8 /* PasswordStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5490F89266AB72B00CD39B8 /* PasswordStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		E5490F78266AAF8200CD39B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5490F7B266AAF8200CD39B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E5490F7D266AAF8200CD39B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5490F86266AB10F00CD39B8 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		E5490F89266AB72B00CD39B8 /* PasswordStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +56,10 @@
 		E5490F73266AAF8100CD39B8 /* SwiftUIFormValidation */ = {
 			isa = PBXGroup;
 			children = (
-				E5490F74266AAF8100CD39B8 /* SwiftUIFormValidationApp.swift */,
-				E5490F76266AAF8100CD39B8 /* ContentView.swift */,
-				E5490F78266AAF8200CD39B8 /* Assets.xcassets */,
-				E5490F7D266AAF8200CD39B8 /* Info.plist */,
+				E5490F83266AB08400CD39B8 /* App */,
+				E5490F88266AB71700CD39B8 /* Models */,
+				E5490F84266AB08900CD39B8 /* Views */,
+				E5490F85266AB08E00CD39B8 /* ViewModels */,
 				E5490F7A266AAF8200CD39B8 /* Preview Content */,
 			);
 			path = SwiftUIFormValidation;
@@ -67,6 +71,40 @@
 				E5490F7B266AAF8200CD39B8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E5490F83266AB08400CD39B8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E5490F74266AAF8100CD39B8 /* SwiftUIFormValidationApp.swift */,
+				E5490F78266AAF8200CD39B8 /* Assets.xcassets */,
+				E5490F7D266AAF8200CD39B8 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E5490F84266AB08900CD39B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E5490F76266AAF8100CD39B8 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E5490F85266AB08E00CD39B8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E5490F86266AB10F00CD39B8 /* ContentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E5490F88266AB71700CD39B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E5490F89266AB72B00CD39B8 /* PasswordStatus.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +178,8 @@
 			files = (
 				E5490F77266AAF8100CD39B8 /* ContentView.swift in Sources */,
 				E5490F75266AAF8100CD39B8 /* SwiftUIFormValidationApp.swift in Sources */,
+				E5490F8A266AB72B00CD39B8 /* PasswordStatus.swift in Sources */,
+				E5490F87266AB10F00CD39B8 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +311,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIFormValidation/Preview Content\"";
 				DEVELOPMENT_TEAM = 5B74F682NG;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftUIFormValidation/Info.plist;
+				INFOPLIST_FILE = SwiftUIFormValidation/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,7 +333,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIFormValidation/Preview Content\"";
 				DEVELOPMENT_TEAM = 5B74F682NG;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftUIFormValidation/Info.plist;
+				INFOPLIST_FILE = SwiftUIFormValidation/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
