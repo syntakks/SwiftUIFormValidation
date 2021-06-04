@@ -13,6 +13,7 @@
 		E5490F7C266AAF8200CD39B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5490F7B266AAF8200CD39B8 /* Preview Assets.xcassets */; };
 		E5490F87266AB10F00CD39B8 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5490F86266AB10F00CD39B8 /* ContentViewModel.swift */; };
 		E5490F8A266AB72B00CD39B8 /* PasswordStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5490F89266AB72B00CD39B8 /* PasswordStatus.swift */; };
+		E5490F8C266ACD7400CD39B8 /* LoginSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5490F8B266ACD7400CD39B8 /* LoginSuccessView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E5490F7D266AAF8200CD39B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5490F86266AB10F00CD39B8 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		E5490F89266AB72B00CD39B8 /* PasswordStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStatus.swift; sourceTree = "<group>"; };
+		E5490F8B266ACD7400CD39B8 /* LoginSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSuccessView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				E5490F76266AAF8100CD39B8 /* ContentView.swift */,
+				E5490F8B266ACD7400CD39B8 /* LoginSuccessView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				E5490F77266AAF8100CD39B8 /* ContentView.swift in Sources */,
 				E5490F75266AAF8100CD39B8 /* SwiftUIFormValidationApp.swift in Sources */,
 				E5490F8A266AB72B00CD39B8 /* PasswordStatus.swift in Sources */,
+				E5490F8C266ACD7400CD39B8 /* LoginSuccessView.swift in Sources */,
 				E5490F87266AB10F00CD39B8 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

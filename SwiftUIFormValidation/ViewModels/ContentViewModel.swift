@@ -14,6 +14,7 @@ class ContentViewModel: ObservableObject {
   @Published var passwordAgain: String = ""
   @Published var inlineErrorForPassword: String = ""
   @Published var isValid = false
+  @Published var isLoggedIn = false
   
   private var cancelables = Set<AnyCancellable>()
   
