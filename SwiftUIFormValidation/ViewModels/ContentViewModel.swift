@@ -41,6 +41,7 @@ class ContentViewModel: ObservableObject {
       .store(in: &cancelables)
   }
   
+  // MARK: - Username Valid
   private var isUsernameValidPublisher: AnyPublisher<Bool, Never> {
     $username
       .debounce(for: 0.8, scheduler: RunLoop.main)
@@ -49,6 +50,7 @@ class ContentViewModel: ObservableObject {
       .eraseToAnyPublisher()
   }
   
+  // MARK: - Password Empty
   private var isPasswordEmptyPublisher: AnyPublisher<Bool, Never> {
     $password
       .debounce(for: 0.8, scheduler: RunLoop.main)
@@ -57,6 +59,7 @@ class ContentViewModel: ObservableObject {
       .eraseToAnyPublisher()
   }
   
+  // MARK: - Passwords Equal
   private var arePasswordsEqualPublisher: AnyPublisher<Bool, Never> {
     Publishers.CombineLatest($password, $passwordAgain)
       .debounce(for: 0.2, scheduler: RunLoop.main)
@@ -64,6 +67,7 @@ class ContentViewModel: ObservableObject {
       .eraseToAnyPublisher()
   }
   
+  // MARK: - Password Strong
   private var isPasswordStrongPublisher: AnyPublisher<Bool, Never> {
     $password
       .debounce(for: 0.2, scheduler: RunLoop.main)
@@ -74,6 +78,7 @@ class ContentViewModel: ObservableObject {
       .eraseToAnyPublisher()
   }
   
+  // MARK: - Password Valid
   private var isPasswordValidPublisher: AnyPublisher<PasswordStatus, Never> {
     Publishers.CombineLatest3(isPasswordEmptyPublisher, arePasswordsEqualPublisher, isPasswordStrongPublisher)
       .map {
@@ -85,6 +90,7 @@ class ContentViewModel: ObservableObject {
       .eraseToAnyPublisher()
   }
   
+  // MARK: - Form Valid
   private var isFormValidPublisher: AnyPublisher<Bool, Never> {
     Publishers.CombineLatest(isUsernameValidPublisher, isPasswordValidPublisher)
       .map {
